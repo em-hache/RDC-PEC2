@@ -1,0 +1,923 @@
+@prefix : <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo> rdf:type owl:Ontology ;
+                                                                    <http://purl.org/dc/elements/1.1/name> "Tourism Ontology" ;
+                                                                    <http://purl.org/dc/elements/1.1/title> "Tourism Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/name
+<http://purl.org/dc/elements/1.1/name> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#hostsPlaces
+:hostsPlaces rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain <http://www.w3.org/2002/07/City> ;
+             rdfs:range :Place ;
+             rdfs:comment "Lists the attractions that a city offers" ;
+             rdfs:label "hosts places" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :LocatedClass ;
+             rdfs:range <http://www.w3.org/2002/07/City> ;
+             rdfs:comment "Indicates in which city is located the entity it is located at" ;
+             rdfs:label "is located in" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#city_id
+:city_id rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain <http://www.w3.org/2002/07/City> ;
+         rdfs:range xsd:integer ;
+         rdfs:comment "General data property that contains the id of a city instance" ;
+         rdfs:label "city id" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:range xsd:dateTime ;
+      rdfs:comment "Data property that contains a date" ;
+      rdfs:label "date generic" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#event_id
+:event_id rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Event ;
+          rdfs:range xsd:integer ;
+          rdfs:comment "General data property that contains the id of an event instance" ;
+          rdfs:label "event id" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#good_value_hotel
+:good_value_hotel rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Hotel ;
+                  rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#good_value_restaurant
+:good_value_restaurant rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:domain :Restaurant ;
+                       rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#hotel_id
+:hotel_id rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Hotel ;
+          rdfs:range xsd:integer ;
+          rdfs:comment "General data property that contains the id of a hotel instance" ;
+          rdfs:label "hotel id" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#hotel_type
+:hotel_type rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Hotel ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Data property that indicates the type of hotel" ;
+            rdfs:label "hotel type" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#isBeachCity
+:isBeachCity rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain <http://www.w3.org/2002/07/City> ;
+             rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain <http://www.w3.org/2002/07/City> ;
+          rdfs:comment "Holds the latitude and longitude of a location" ;
+          rdfs:label "location in coordenates" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#medium_price
+:medium_price rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Restaurant ;
+              rdfs:range xsd:decimal ;
+              rdfs:comment "Represents a price value" ;
+              rdfs:label "medium price generic" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:range xsd:string ;
+      rdfs:comment "General data property that contains the name of an instance" ;
+      rdfs:label "name" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#nightly_rate
+:nightly_rate rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Hotel ;
+              rdfs:range xsd:decimal ;
+              rdfs:comment "Represents the price for a night in a hotel" ;
+              rdfs:label "hotel medium nightly rate" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#place_id
+:place_id rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Place ;
+          rdfs:range xsd:integer ;
+          rdfs:comment "General data property that contains the id of an attraction instance" ;
+          rdfs:label "attraction id" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#place_type
+:place_type rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Place ;
+            rdfs:comment "Data property that indicates the type of attraction" ;
+            rdfs:label "attraction type" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#rating
+:rating rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:range xsd:decimal ;
+        rdfs:comment "This property indicates the city where this entity is at" ;
+        rdfs:label "is located in" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#restaurant_id
+:restaurant_id rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Restaurant ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "General data property that contains the id of a restaurant instance" ;
+               rdfs:label "restaurant id" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#restaurant_type
+:restaurant_type rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :Restaurant ;
+                 rdfs:comment "Data property that indicates the type of restaurant" ;
+                 rdfs:label "restaurant type" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#stars
+:stars rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Hotel ;
+       rdfs:range xsd:integer ;
+       rdfs:comment "Represents the hotel category in the stars range" ;
+       rdfs:label "stars" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#transport_id
+:transport_id rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Transport ;
+              rdfs:range xsd:integer ;
+              rdfs:comment "General data property that contains the id of a transportation instance" ;
+              rdfs:label "transport id" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#transport_type
+:transport_type rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Transport ;
+                rdfs:comment "Data property that indicates the type of transportation" ;
+                rdfs:label "type of transportation" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Hotel
+<http://dbpedia.org/ontology/Hotel> rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Museum
+<http://dbpedia.org/ontology/Museum> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Andalusian
+:Andalusian rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty :restaurant_type ;
+                                  owl:hasValue "Andaluza"
+                                ] ;
+            rdfs:subClassOf :Restaurant ;
+            rdfs:comment "Type of restaurant: andalusian cuisine" ;
+            rdfs:label "Andalusian" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Beach
+:Beach rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :Hotel
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hotel_type ;
+                                                    owl:hasValue "Playa"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:comment "Type of hotel: beach" ;
+       rdfs:label "Beach Hotel" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Bicycle
+:Bicycle rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :transport_type ;
+                               owl:hasValue "Bicicleta"
+                             ] ;
+         rdfs:subClassOf :Transport ;
+         rdfs:comment "Type of transportation: bicycle" ;
+         rdfs:label "Bicycle" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Bus
+:Bus rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :transport_type ;
+                           owl:hasValue "Autobús"
+                         ] ;
+     rdfs:subClassOf :Transport ;
+     rdfs:comment "Type of transportation: bus" ;
+     rdfs:label "Bus" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Business
+:Business rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :Hotel
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :hotel_type ;
+                                                       owl:hasValue "Negocios"
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:comment "Type of hotel: business" ;
+          rdfs:label "Business Hotel" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Cultural
+:Cultural rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :place_type ;
+                                owl:hasValue "Cultural"
+                              ] ;
+          rdfs:subClassOf :Place ;
+          rdfs:comment "Type of attraction: cultural" ;
+          rdfs:label "Cultural" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf :LocatedClass ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :event_id ;
+                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ;
+       rdfs:comment "Concept event" ;
+       rdfs:label "Event" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Hotel
+:Hotel rdf:type owl:Class ;
+       rdfs:subClassOf <http://dbpedia.org/ontology/Hotel> ,
+                       :LocatedClass ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :stars ;
+                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                             owl:oneOf [ rdf:type rdf:List ;
+                                                         rdf:first 1 ;
+                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                    rdf:first 2 ;
+                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                               rdf:first 3 ;
+                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                          rdf:first 4 ;
+                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                     rdf:first 5 ;
+                                                                                                     rdf:rest rdf:nil
+                                                                                                   ]
+                                                                                        ]
+                                                                             ]
+                                                                  ]
+                                                       ]
+                                           ]
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hotel_id ;
+                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ;
+       rdfs:comment "Concept hotel" ;
+       rdfs:label "Hotel" ;
+       rdfs:seeAlso "http://dbpedia.org/ontology/Hotel" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Italian
+:Italian rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :restaurant_type ;
+                               owl:hasValue "Italiana"
+                             ] ;
+         rdfs:subClassOf :Restaurant ;
+         rdfs:comment "Type of restaurant: italian cuisine" ;
+         rdfs:label "Italian" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Japanese
+:Japanese rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :restaurant_type ;
+                                owl:hasValue "Japonesa"
+                              ] ;
+          rdfs:subClassOf :Restaurant ;
+          rdfs:comment "Type of restaurant: Japanese cuisine" ;
+          rdfs:label "Japanese" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#LocatedClass
+:LocatedClass rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Luxury
+:Luxury rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :Hotel
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hotel_type ;
+                                                     owl:hasValue "Lujo"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:comment "Type of hotel: luxury" ;
+        rdfs:label "Luxury Hotel" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Mediterranean
+:Mediterranean rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :restaurant_type ;
+                                     owl:hasValue "Mediterranea"
+                                   ] ;
+               rdfs:subClassOf :Restaurant ;
+               rdfs:comment "Type of restaurant: mediterranean cuisine" ;
+               rdfs:label "Mediterranean" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Mexican
+:Mexican rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :restaurant_type ;
+                               owl:hasValue "Mexicana"
+                             ] ;
+         rdfs:subClassOf :Restaurant ;
+         rdfs:comment "Type of restaurant: mexican cuisine" ;
+         rdfs:label "Mexican" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Monument
+:Monument rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :place_type ;
+                                owl:hasValue "Monumento"
+                              ] ;
+          rdfs:subClassOf :Place ;
+          rdfs:comment "Type of attraction: monument" ;
+          rdfs:label "Monument" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Museum
+:Museum rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :place_type ;
+                              owl:hasValue "Museo"
+                            ] ;
+        rdfs:subClassOf <http://dbpedia.org/ontology/Museum> ,
+                        :Place ;
+        rdfs:comment "Type of attraction: museum" ;
+        rdfs:label "Museum" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Park
+:Park rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :place_type ;
+                            owl:hasValue "Parque"
+                          ] ;
+      rdfs:subClassOf :Place ;
+      rdfs:comment "Type of attraction: park" ;
+      rdfs:label "Park" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Place
+:Place rdf:type owl:Class ;
+       rdfs:subClassOf :LocatedClass ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :place_id ;
+                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ;
+       rdfs:comment "Concept place" ;
+       rdfs:label "Place" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Restaurant
+:Restaurant rdf:type owl:Class ;
+            rdfs:subClassOf :LocatedClass ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :restaurant_id ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ;
+            rdfs:comment "Concept restaurant" ;
+            rdfs:label "Restaurant" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Taxi
+:Taxi rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :transport_type ;
+                            owl:hasValue "Taxi"
+                          ] ;
+      rdfs:subClassOf :Transport ;
+      rdfs:comment "Type of transportation: taxi" ;
+      rdfs:label "Taxi" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Train
+:Train rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :transport_type ;
+                             owl:hasValue "Tranvía"
+                           ] ;
+       rdfs:subClassOf :Transport ;
+       rdfs:comment "Type of transportation: train" ;
+       rdfs:label "Train" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:subClassOf :LocatedClass ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :transport_id ;
+                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:integer
+                           ] ;
+           rdfs:comment "Concept transport" ;
+           rdfs:label "Transport" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Turistic
+:Turistic rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :Hotel
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :hotel_type ;
+                                                       owl:hasValue "Turistico"
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:comment "Type of hotel: turistic" ;
+          rdfs:label "Turistic Hotel" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Underground
+:Underground rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty :transport_type ;
+                                   owl:hasValue "Metro"
+                                 ] ;
+             rdfs:subClassOf :Transport ;
+             rdfs:comment "Type of transportation: underground" ;
+             rdfs:label "Underground" .
+
+
+###  http://www.w3.org/2002/07/City
+<http://www.w3.org/2002/07/City> rdf:type owl:Class ;
+                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hostsPlaces ;
+                                                   owl:someValuesFrom :Place
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :city_id ;
+                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   owl:onDataRange xsd:integer
+                                                 ] ;
+                                 rdfs:comment "Concept city" ;
+                                 rdfs:label "City" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://dbpedia.org/resource/Málaga
+<http://dbpedia.org/resource/Málaga> rdf:type owl:NamedIndividual ;
+                                     owl:sameAs :Malaga .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Malaga
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Alcazaba
+:Alcazaba rdf:type owl:NamedIndividual ,
+                   :Place ;
+          :isLocatedIn :Malaga ;
+          :name "Alcazaba Romana" ;
+          :place_id 1 ;
+          :place_type "Monumento" ;
+          :rating 5.0 .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Los_Mellizos
+:Los_Mellizos rdf:type owl:NamedIndividual ,
+                       :Restaurant ;
+              :isLocatedIn :Malaga ;
+              :medium_price 30.5 ;
+              :name "Los Mellizos Pescado" ;
+              :rating 4.6 ;
+              :restaurant_id 1 ;
+              :restaurant_type "Andaluza" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Malaga
+:Malaga rdf:type owl:NamedIndividual ,
+                 <http://www.w3.org/2002/07/City> ;
+        :city_id 1 ;
+        :name "Malaga" .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Malaga_Palacio
+:Malaga_Palacio rdf:type owl:NamedIndividual ,
+                         :Hotel ;
+                :isLocatedIn :Malaga ;
+                :hotel_id 2 ;
+                :hotel_type "Playa" ;
+                :name "Malaga Palacio" ;
+                :nightly_rate 250.0 ;
+                :rating 4.1 ;
+                :stars 5 .
+
+
+###  http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Visita_a_la_Alcazaba
+:Visita_a_la_Alcazaba rdf:type owl:NamedIndividual ,
+                               :Event ;
+                      :date "2025-05-05T10:30:00"^^xsd:dateTime ;
+                      :event_id 1 ;
+                      :name "Visita a la Alcazaba" .
+
+
+[ :restaurant_type "Andaluza"
+] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( :Andalusian
+                 :Italian
+                 :Japanese
+                 :Mediterranean
+                 :Mexican
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Beach
+                :Business
+                :Luxury
+                :Turistic
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bicycle
+                :Bus
+                :Taxi
+                :Train
+                :Underground
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :city_id
+                :event_id
+                :hotel_id
+                :place_id
+                :restaurant_id
+                :transport_id
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/idealPrice> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/priceRatio> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/priceScore> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/ratingRatio> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/halfRating> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/halfPrice> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/qualityScore> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/val> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/price> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hotel_type ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "Playa"
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :isLocatedIn ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/h> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/c>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isBeachCity ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :rating ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/val>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :medium_price ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/r> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/price>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/val> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 4.0 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/price> ;
+                                                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                           rdf:first 50.0 ;
+                                                                                                                                                           rdf:rest rdf:nil
+                                                                                                                                                         ]
+                                                                                                                                              ]
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :good_value_restaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/r> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :rating ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :nightly_rate ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/h> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/p>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :stars ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/h> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/s>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#multiply> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/idealPrice> ;
+                                                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                           rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/s> ;
+                                                                                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                      rdf:first 100.0 ;
+                                                                                                                                                                      rdf:rest rdf:nil
+                                                                                                                                                                    ]
+                                                                                                                                                         ]
+                                                                                                                                              ]
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#divide> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#arguments> ( <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/priceRatio>
+                                                                                                                                                           <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/p>
+                                                                                                                                                           <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/idealPrice>
+                                                                                                                                                         )
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#subtract> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                                      rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/priceScore> ;
+                                                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                 rdf:first 1.0 ;
+                                                                                                                                                                                 rdf:rest ( <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/priceRatio>
+                                                                                                                                                                                          )
+                                                                                                                                                                               ]
+                                                                                                                                                                    ]
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#divide> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                                                 rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/ratingRatio> ;
+                                                                                                                                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                            rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/r> ;
+                                                                                                                                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                       rdf:first 5.0 ;
+                                                                                                                                                                                                       rdf:rest rdf:nil
+                                                                                                                                                                                                     ]
+                                                                                                                                                                                          ]
+                                                                                                                                                                               ]
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#multiply> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                                                            rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/halfRating> ;
+                                                                                                                                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                       rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/ratingRatio> ;
+                                                                                                                                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                  rdf:first 0.5 ;
+                                                                                                                                                                                                                  rdf:rest rdf:nil
+                                                                                                                                                                                                                ]
+                                                                                                                                                                                                     ]
+                                                                                                                                                                                          ]
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#multiply> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                                                                       rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/halfPrice> ;
+                                                                                                                                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                  rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/priceScore> ;
+                                                                                                                                                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                             rdf:first 0.5 ;
+                                                                                                                                                                                                                             rdf:rest rdf:nil
+                                                                                                                                                                                                                           ]
+                                                                                                                                                                                                                ]
+                                                                                                                                                                                                     ]
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#add> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#arguments> ( <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/qualityScore>
+                                                                                                                                                                                                                  <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/halfRating>
+                                                                                                                                                                                                                  <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/halfPrice>
+                                                                                                                                                                                                                )
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                                                                                             rdf:first <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/qualityScore> ;
+                                                                                                                                                                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                                                                        rdf:first 0.65 ;
+                                                                                                                                                                                                                                        rdf:rest rdf:nil
+                                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                           ]
+                                                                                                                                                                              ] ;
+                                                                                                                                                                    rdf:rest rdf:nil
+                                                                                                                                                                  ]
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :good_value_hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/elenamoreno/ontologies/2025/3/untitled-ontology-5/h> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

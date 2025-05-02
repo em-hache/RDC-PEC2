@@ -1,0 +1,1513 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "http://www.w3.org/2002/07", "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo" ],
+    "title" : {
+      "undefined" : "Tourism Ontology"
+    },
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "other" : {
+      "name" : [ {
+        "identifier" : "name",
+        "language" : "undefined",
+        "value" : "Tourism Ontology",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Tourism Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Beach",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Beach",
+      "undefined" : "Beach Hotel"
+    },
+    "intersection" : [ "1" ],
+    "comment" : {
+      "undefined" : "Type of hotel: beach"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Underground",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Underground",
+      "undefined" : "Underground"
+    },
+    "comment" : {
+      "undefined" : "Type of transportation: underground"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Business",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Business",
+      "undefined" : "Business Hotel"
+    },
+    "intersection" : [ "1" ],
+    "comment" : {
+      "undefined" : "Type of hotel: business"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Bus",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bus",
+      "undefined" : "Bus"
+    },
+    "comment" : {
+      "undefined" : "Type of transportation: bus"
+    },
+    "id" : "16",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Museum",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Museum"
+    },
+    "subClasses" : [ "34" ],
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Hotel",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/Hotel",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Hotel",
+      "undefined" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Malaga_Palacio",
+      "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+      "labels" : {
+        "IRI-based" : "Malaga_Palacio"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Concept hotel"
+    },
+    "id" : "1",
+    "superClasses" : [ "42", "43" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Turistic",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Turistic",
+      "undefined" : "Turistic Hotel"
+    },
+    "intersection" : [ "1" ],
+    "comment" : {
+      "undefined" : "Type of hotel: turistic"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Restaurant",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "undefined" : "Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Los_Mellizos",
+      "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+      "labels" : {
+        "IRI-based" : "Los_Mellizos"
+      }
+    } ],
+    "subClasses" : [ "55", "56", "57", "58", "59" ],
+    "comment" : {
+      "undefined" : "Concept restaurant"
+    },
+    "id" : "31",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Luxury",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Luxury",
+      "undefined" : "Luxury Hotel"
+    },
+    "intersection" : [ "1" ],
+    "comment" : {
+      "undefined" : "Type of hotel: luxury"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Place",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place",
+      "undefined" : "Place"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Alcazaba",
+      "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+      "labels" : {
+        "IRI-based" : "Alcazaba"
+      }
+    } ],
+    "subClasses" : [ "72", "73", "74", "34" ],
+    "comment" : {
+      "undefined" : "Concept place"
+    },
+    "id" : "11",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Taxi",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxi",
+      "undefined" : "Taxi"
+    },
+    "comment" : {
+      "undefined" : "Type of transportation: taxi"
+    },
+    "id" : "21",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/City",
+    "baseIri" : "http://www.w3.org/2002/07",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Malaga",
+      "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+      "labels" : {
+        "IRI-based" : "Malaga"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Concept city"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Event",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Visita_a_la_Alcazaba",
+      "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+      "labels" : {
+        "IRI-based" : "Visita_a_la_Alcazaba"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Concept event"
+    },
+    "id" : "76",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Andalusian",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Andalusian",
+      "undefined" : "Andalusian"
+    },
+    "comment" : {
+      "undefined" : "Type of restaurant: andalusian cuisine"
+    },
+    "id" : "59",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Monument",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Monument",
+      "undefined" : "Monument"
+    },
+    "comment" : {
+      "undefined" : "Type of attraction: monument"
+    },
+    "id" : "72",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Train",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Train",
+      "undefined" : "Train"
+    },
+    "comment" : {
+      "undefined" : "Type of transportation: train"
+    },
+    "id" : "19",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Japanese",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Japanese",
+      "undefined" : "Japanese"
+    },
+    "comment" : {
+      "undefined" : "Type of restaurant: Japanese cuisine"
+    },
+    "id" : "56",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Transport",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "subClasses" : [ "19", "36", "16", "3", "21" ],
+    "comment" : {
+      "undefined" : "Concept transport"
+    },
+    "id" : "4",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Cultural",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cultural",
+      "undefined" : "Cultural"
+    },
+    "comment" : {
+      "undefined" : "Type of attraction: cultural"
+    },
+    "id" : "73",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Hotel",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Park",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Park",
+      "undefined" : "Park"
+    },
+    "comment" : {
+      "undefined" : "Type of attraction: park"
+    },
+    "id" : "74",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Museum",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Museum",
+      "undefined" : "Museum"
+    },
+    "comment" : {
+      "undefined" : "Type of attraction: museum"
+    },
+    "id" : "34",
+    "superClasses" : [ "11", "33" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Mediterranean",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mediterranean",
+      "undefined" : "Mediterranean"
+    },
+    "comment" : {
+      "undefined" : "Type of restaurant: mediterranean cuisine"
+    },
+    "id" : "57",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Bicycle",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bicycle",
+      "undefined" : "Bicycle"
+    },
+    "comment" : {
+      "undefined" : "Type of transportation: bicycle"
+    },
+    "id" : "36",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#LocatedClass",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LocatedClass"
+    },
+    "subClasses" : [ "31", "4", "11", "1", "76" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Mexican",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mexican",
+      "undefined" : "Mexican"
+    },
+    "comment" : {
+      "undefined" : "Type of restaurant: mexican cuisine"
+    },
+    "id" : "55",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#Italian",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Italian",
+      "undefined" : "Italian"
+    },
+    "comment" : {
+      "undefined" : "Type of restaurant: italian cuisine"
+    },
+    "id" : "58",
+    "superClasses" : [ "31" ]
+  } ],
+  "property" : [ {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "23",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "107",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "108",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#date",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "date",
+      "undefined" : "date generic"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Data property that contains a date"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#hostsPlaces",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hostsPlaces",
+      "undefined" : "hosts places"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Lists the attractions that a city offers"
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#place_id",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "place_id",
+      "undefined" : "attraction id"
+    },
+    "minCardinality" : "1",
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "General data property that contains the id of an attraction instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "7",
+    "subproperty" : [ "9", "17" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "3",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "3",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#hostsPlaces",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hostsPlaces",
+      "undefined" : "hosts places"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Lists the attractions that a city offers"
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "19",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "21",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "19",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "3",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#transport_id",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "transport_id",
+      "undefined" : "transport id"
+    },
+    "minCardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "General data property that contains the id of a transportation instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#good_value_restaurant",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "good_value_restaurant"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "range" : "19",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#city_id",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "city_id",
+      "undefined" : "city id"
+    },
+    "minCardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "General data property that contains the id of a city instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "range" : "21",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#rating",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "rating",
+      "undefined" : "is located in"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "This property indicates the city where this entity is at"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "range" : "3",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "45",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "47",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#name",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "General data property that contains the name of an instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "range" : "16",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "45",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "5",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "45",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "47",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "31",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "31",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "31",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "33",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#place_type",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "place_type",
+      "undefined" : "attraction type"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Data property that indicates the type of attraction"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#event_id",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "event_id",
+      "undefined" : "event id"
+    },
+    "minCardinality" : "1",
+    "domain" : "76",
+    "comment" : {
+      "undefined" : "General data property that contains the id of an event instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#hotel_id",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hotel_id",
+      "undefined" : "hotel id"
+    },
+    "minCardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "General data property that contains the id of a hotel instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#transport_type",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "transport_type",
+      "undefined" : "type of transportation"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Data property that indicates the type of transportation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#medium_price",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "medium_price",
+      "undefined" : "medium price generic"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Represents a price value"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#good_value_hotel",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "good_value_hotel"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "range" : "43",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "43",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "43",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "42",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "43",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "43",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "4",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "range" : "4",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "4",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#isBeachCity",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "isBeachCity"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "range" : "11",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "11",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "4",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "31",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "31",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "11",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "range" : "11",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "57",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "105"
+  }, {
+    "range" : "55",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "56",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "57",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#isLocatedIn",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isLocatedIn",
+      "undefined" : "is located in"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Indicates in which city is located the entity it is located at"
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "range" : "55",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "55",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#nightly_rate",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "nightly_rate",
+      "undefined" : "hotel medium nightly rate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Represents the price for a night in a hotel"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "range" : "55",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "58",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "56",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#restaurant_type",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "restaurant_type",
+      "undefined" : "restaurant type"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Data property that indicates the type of restaurant"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#stars",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "stars",
+      "undefined" : "stars"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Represents the hotel category in the stars range"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#restaurant_id",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "restaurant_id",
+      "undefined" : "restaurant id"
+    },
+    "minCardinality" : "1",
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "General data property that contains the id of a restaurant instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#location",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "location",
+      "undefined" : "location in coordenates"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Holds the latitude and longitude of a location"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo#hotel_type",
+    "baseIri" : "http://www.semanticweb.org/elenamoreno/ontologies/2025/3/turismo",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hotel_type",
+      "undefined" : "hotel type"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Data property that indicates the type of hotel"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  } ]
+}
